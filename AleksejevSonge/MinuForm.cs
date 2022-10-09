@@ -45,7 +45,7 @@ namespace AleksejevSonge
 
             Label failisnimi = new Label
             {
-                Text = String.Format("Виктор Цой - Группа крови"),
+                Text = String.Format("BoyWithUke-Long Drive"),
                 Location = new System.Drawing.Point(250, 10),
                 Size = new System.Drawing.Size(100, 50),
                 BackColor = System.Drawing.Color.White,
@@ -53,7 +53,7 @@ namespace AleksejevSonge
             };
             Label failisnimi1 = new Label
             {
-                Text = String.Format("kaito_shoma_-_scary_garry_"),
+                Text = String.Format("kaito shoma-scary garry_"),
                 Location = new System.Drawing.Point(250, 60),
                 Size = new System.Drawing.Size(100, 50),
                 BackColor = System.Drawing.Color.White,
@@ -61,7 +61,7 @@ namespace AleksejevSonge
             };
             Label failisnimi2 = new Label
             {
-                Text = String.Format("plenka_-_when_you_find_me_"),
+                Text = String.Format("plenka-when you find me "),
                 Location = new System.Drawing.Point(250, 110),
                 Size = new System.Drawing.Size(100, 50),
                 BackColor = System.Drawing.Color.White,
@@ -92,10 +92,10 @@ namespace AleksejevSonge
             var vastus = MessageBox.Show("Kas tahad muusikat kuulata?", "Küsimus", MessageBoxButtons.YesNo);
             if (vastus == DialogResult.Yes)
             {
-                using (var muusika = new SoundPlayer(@"..\..\Krov.wav.wav"))
+                using (var muusika = new SoundPlayer(@"..\..\boy.wav"))
                 {
                     muusika.Play();
-                    MessageBox.Show("ВикторЦой");
+                    MessageBox.Show("BoyWithUke");
                 }
             }
             else
@@ -110,10 +110,10 @@ namespace AleksejevSonge
             var vastus = MessageBox.Show("Kas tahad muusikat kuulata?", "Küsimus", MessageBoxButtons.YesNo);
             if (vastus == DialogResult.Yes)
             {
-                using (var muusika = new SoundPlayer(@"..\..\kaito.wav.wav"))
+                using (var muusika = new SoundPlayer(@"..\..\kaito.wav"))
                 {
                     muusika.Play();
-                    MessageBox.Show("kaito");
+                    MessageBox.Show("Kaito Shoma");
 
                 }
             }
@@ -129,10 +129,10 @@ namespace AleksejevSonge
             var vastus = MessageBox.Show("Kas tahad muusikat kuulata?", "Küsimus", MessageBoxButtons.YesNo);
             if (vastus == DialogResult.Yes)
             {
-                using (var muusika = new SoundPlayer(@"..\..\plenka.wav.wav"))
+                using (var muusika = new SoundPlayer(@"..\..\plenka.wav"))
                 {
                     muusika.Play();
-                    MessageBox.Show("plenka");
+                    MessageBox.Show("Plenka");
                 }
             }
             else
